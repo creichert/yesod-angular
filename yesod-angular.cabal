@@ -1,8 +1,8 @@
 name:          yesod-angular
 version:       0.1.0.0
-synopsis:      Yesod AngularJS integration.
+synopsis:      Yesod Angular JS integration.
 description:
-    Yesod AngularJS integration.
+    Yesod Angular JS integration.
 
     This module is based on Michael Snoyman's original work
     in the <https://github.com/snoyberg/yesod-js> repository.

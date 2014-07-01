@@ -10,8 +10,10 @@
 --
 --   * This module currently defaults to Angular 1.2.18. Use
 --     `urlAngularJs_` specify your own Angular location.
+--
 --   * Example can be found at:
 --        <https://github.com/snoyberg/yesod-js/tree/master/yesod-angular>
+--
 --   * Currently, this module looks for controllers in the
 --     `templates/angular` directory.
 module Yesod.Angular
@@ -48,6 +50,7 @@ class Yesod site => YesodAngular site where
     urlAngularJs _ = [Right "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js",
                       Right "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js"]
 
+    -- | 'wrapAngular' wraps @widget in an ng-app named @modname.
     wrapAngular :: Text -> WidgetT site IO () -> HandlerT site IO Html
     wrapAngular modname widget = defaultLayout [whamlet| <div ng-app=#{modname}>^{widget} |]
 
