@@ -1,21 +1,32 @@
+------------------------------------------------------------------------
+-- |
+-- Module      : Yesod.Angular
+-- Description : Yesod Angular JS Integration.
+-- Copyright   : (c) 2014-2015, Christopher Reichert
+-- License     : BSD3
+-- Maintainer  : Christopher Reichert <creichert@reichertbrothers.com>
+-- Stability   : unstable
+-- Portability : POSIX
+--
+--
+-- This module is based on Michael Snoyman's original work
+-- in the <https://github.com/snoyberg/yesod-js> repository.
+--
+-- * This module currently defaults to Angular 1.2.18. Use
+--   `urlAngularJs_` specify your own Angular location.
+--
+-- * Example can be found at:
+--      <https://github.com/snoyberg/yesod-js/tree/master/yesod-angular>
+--
+-- * Currently, this module looks for controllers in the
+--   `templates/angular` directory.
+
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
 {-# LANGUAGE RecordWildCards   #-}
 {-# LANGUAGE TemplateHaskell   #-}
 
--- | Yesod Angular JS Integration.
---
---   This module is based on Michael Snoyman's original work
---   in the <https://github.com/snoyberg/yesod-js> repository.
---
---   * This module currently defaults to Angular 1.2.18. Use
---     `urlAngularJs_` specify your own Angular location.
---
---   * Example can be found at:
---        <https://github.com/snoyberg/yesod-js/tree/master/yesod-angular>
---
---   * Currently, this module looks for controllers in the
---     `templates/angular` directory.
+
 module Yesod.Angular
     ( YesodAngular (..)
     , runAngular
