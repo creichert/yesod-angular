@@ -54,9 +54,10 @@ import           Text.Julius                (JavascriptUrl, juliusFile, rawJS)
 import           Yesod
 
 
--- | YesodAngular wraps a widget in ng-app named @modname.
+-- | YesodAngular wraps a widget in an ng-app named @modname@
 class Yesod site => YesodAngular site where
-    -- | Default instance loads `angular.min.js` and `angular-route.min.js`.
+    -- | Default instance loads `angular.min.js` and `angular-route.min.js` from
+    -- cloudflare cdn.
     urlAngularJs :: site -> [Either (Route site) Text]
     urlAngularJs _ = [Right "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js",
                       Right "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.min.js"]
