@@ -37,20 +37,20 @@ module Yesod.Angular
     , AngularT
     ) where
 
-import           Control.Applicative ((<$>))
-import           Control.Monad.Trans.Writer (WriterT(..), tell)
-import           Data.Aeson (FromJSON, ToJSON)
-import           Data.Char (isAlpha)
-import           Data.Map (Map)
-import qualified Data.Map as Map
-import           Data.Maybe (fromMaybe)
-import           Data.Monoid (Monoid, First(..), (<>), mempty, mappend)
-import           Data.Text (Text)
-import qualified Data.Text as T
-import           Language.Haskell.TH.Syntax (Q, Exp (AppE, LitE),
-                                             Lit (StringL))
-import           Text.Hamlet (hamletFile)
-import           Text.Julius (JavascriptUrl, juliusFile, rawJS)
+import           Control.Applicative        ((<$>))
+import           Control.Monad.Trans.Writer (WriterT (..), tell)
+import           Data.Aeson                 (FromJSON, ToJSON)
+import           Data.Char                  (isAlpha)
+import           Data.Map                   (Map)
+import qualified Data.Map                   as Map
+import           Data.Maybe                 (fromMaybe)
+import           Data.Monoid                (First (..), Monoid, mappend,
+                                             mempty, (<>))
+import           Data.Text                  (Text)
+import qualified Data.Text                  as T
+import           Language.Haskell.TH.Syntax (Exp (AppE, LitE), Lit (StringL), Q)
+import           Text.Hamlet                (hamletFile)
+import           Text.Julius                (JavascriptUrl, juliusFile, rawJS)
 import           Yesod
 
 
