@@ -3,7 +3,7 @@
 -- Module      : Yesod.Angular
 -- Description : Yesod Angular JS Integration.
 -- Copyright   : (c) 2014-2015, Christopher Reichert
--- License     : BSD3
+-- License     : MIT
 -- Maintainer  : Christopher Reichert <creichert@reichertbrothers.com>
 -- Stability   : unstable
 -- Portability : POSIX
