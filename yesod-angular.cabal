@@ -1,6 +1,6 @@
 name:          yesod-angular
 version:       0.1.0.2
-synopsis:      Angular JS integratoin
+synopsis:      Angular JS integration
 description:
     Angular JS integration for Yesod.
     .
